@@ -2,7 +2,7 @@
 %define date 20081106
 %define distname %{name}-%{date}
 %define version 0
-%define rel 1
+%define rel 2
 %define release %mkrel 0.%{date}.%{rel}
 
 Summary: Channel scan tool for DVB-T and DVB-C
