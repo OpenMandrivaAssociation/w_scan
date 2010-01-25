@@ -1,8 +1,8 @@
 %define name w_scan
-%define date 20081106
+%define date 20091230
 %define distname %{name}-%{date}
 %define version 0
-%define rel 2
+%define rel 1
 %define release %mkrel 0.%{date}.%{rel}
 
 Summary: Channel scan tool for DVB-T and DVB-C
@@ -26,12 +26,12 @@ files for VDR, Kaffeine and Xine.
 %setup -q -n %{distname}
 
 %build
+%configure2_5x
 %make
 
 %install
 rm -rf %{buildroot}
-install -d %{buildroot}%{_bindir}
-install %{name} %{buildroot}%{_bindir}
+%makeinstall_std
 
 %clean
 rm -rf %{buildroot}
@@ -40,3 +40,6 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %doc README
 %{_bindir}/%{name}
+%{_bindir}/w_scan_start.sh
+%{_mandir}/man1/w_scan.1*
+
