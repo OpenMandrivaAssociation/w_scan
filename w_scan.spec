@@ -1,5 +1,5 @@
 %define name w_scan
-%define date 20120415
+%define date 20120525
 %define distname %{name}-%{date}
 %define version 0
 %define rel 1
@@ -22,7 +22,8 @@ initial transponder data for operation. It will create configuration
 files for VDR, Kaffeine and Xine.
 
 %prep
-%setup -q -c -n %{distname}
+%setup -q -n  %{distname}
+# -n %{distname}
 
 %build
 %configure2_5x
