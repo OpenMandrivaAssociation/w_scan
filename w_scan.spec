@@ -16,7 +16,7 @@ Url: http://edafe.org/vdr/w_scan/
 
 %description
 w_scan is an application that greatly simplifies the task of scanning
-for DVB-T, DVB-C and ATSC channel information. Winfried Kvhler\u2019s
+for DVB-T, DVB-C and ATSC channel information. Winfried Köhler’s
 w_scan is special because it does not require any region-specific
 initial transponder data for operation. It will create configuration
 files for VDR, Kaffeine and Xine.
