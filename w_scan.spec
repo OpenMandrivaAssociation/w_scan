@@ -1,5 +1,5 @@
 %define name w_scan
-%define date 20120605
+%define date 20130331
 %define distname %{name}-%{date}
 %define version 0
 %define rel 1
