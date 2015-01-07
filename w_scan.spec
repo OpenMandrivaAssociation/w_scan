@@ -1,20 +1,15 @@
-%define name w_scan
 %define date 20130331
-%define distname %{name}-%{date}
-%define version 0
-%define rel 1
-%define release 0.%{date}.%{rel}
 
-Summary: Channel scan tool for DVB-T and DVB-C
-Name: %{name}
-Version: %{version}
-Release: %{release}
-Source0: %{distname}.tar.bz2
-BuildRequires: kernel-headers
-BuildRequires: glibc-devel
-License: GPLv2+
-Group: Video
-Url: http://edafe.org/vdr/w_scan/
+Summary:	Channel scan tool for DVB-T and DVB-C
+Name:		w_scan
+Version:	0
+Release:	0.%{date}.2
+Source0:	%{name}-%{date}.tar.bz2
+License:	GPLv2+
+Group:	Video
+Url:	http://edafe.org/vdr/w_scan/
+BuildRequires:	kernel-headers
+BuildRequires:	glibc-devel
 
 %description
 w_scan is an application that greatly simplifies the task of scanning
@@ -24,11 +19,14 @@ initial transponder data for operation. It will create configuration
 files for VDR, Kaffeine and Xine.
 
 %prep
-%setup -q -n  %{distname}
+%setup -q -n  %{name}-%{date}
 # -n %{distname}
 
 %build
-%configure2_5x
+export CC=gcc
+export CXX=g++
+
+%configure
 %make
 
 %install
@@ -38,4 +36,3 @@ files for VDR, Kaffeine and Xine.
 %doc README
 %{_bindir}/%{name}
 %{_mandir}/man1/w_scan.1*
-
