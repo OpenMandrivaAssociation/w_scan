@@ -1,9 +1,9 @@
-%define date 20130331
+%define date 20170107
 
 Summary:	Channel scan tool for DVB-T and DVB-C
 Name:		w_scan
 Version:	0
-Release:	0.%{date}.2
+Release:	0.%{date}.1
 Source0:	%{name}-%{date}.tar.bz2
 License:	GPLv2+
 Group:	Video
