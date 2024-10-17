@@ -7,7 +7,7 @@ Release:	0.%{date}.1
 Source0:	%{name}-%{date}.tar.bz2
 License:	GPLv2+
 Group:	Video
-Url:	http://edafe.org/vdr/w_scan/
+Url:	https://edafe.org/vdr/w_scan/
 BuildRequires:	kernel-headers
 BuildRequires:	glibc-devel
 
