@@ -8,6 +8,11 @@ Source0:	%{name}-%{date}.tar.bz2
 License:	GPLv2+
 Group:	Video
 Url:	https://edafe.org/vdr/w_scan/
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	kernel-headers
 BuildRequires:	glibc-devel
 
